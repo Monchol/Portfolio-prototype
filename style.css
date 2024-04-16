@@ -1,0 +1,256 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+}
+
+.cabezal {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    gap: 40vw;
+}
+
+.nav-bar {
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+}
+
+.cabezal-title, .titulo{
+    color: #ffffff;
+}
+
+.titulo {
+    font-size: 50px;
+}
+
+.subtitulo {
+    font-size: 30px;;
+}
+
+p {
+    font-size: 20px;
+}
+
+.nav-item {
+    text-decoration: none;
+    color: #ffffff;/*
+    background-color: rgb(49, 49, 49);*/
+    box-shadow: #ffffff 1px;
+    border-radius: 25px;
+    padding: 10px 20px;
+}
+
+.nav-item:hover {
+    background-color: rgb(75, 75, 75);
+    transition: 250ms;
+}
+
+.content {
+    width: 60vw;
+
+}
+
+#yoSoy, #misHobbies{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#sobreMi {
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-content {
+    width: 22vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-box {
+    background-color: #ffffff;
+    width: 300px;
+    height: 300px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 300px;
+}
+
+.yoImg {
+    width: 280px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 200px;
+}
+
+.pie-pagina {
+    width: 100%;
+    height: 200px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.bi {
+    width: 30px;
+    height: 30px;
+    background-color: #000000;
+}
+
+.bi:hover {
+    background-color: #464646;
+    border-radius: 100px;
+    transition: 250ms;
+}
+
+.redes {
+    display: flex;
+    gap: 10px;
+}
+
+body {
+    width: 100%;
+    height: 305vh;
+    height: inherit;
+    display: grid;
+    grid-template-rows: 5vh, 100vh, 100vh, 100vh;
+    background-image: url("images/wavey-fingerprint.svg");
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+@media (max-width:1400px) {
+    .yoImg {
+        width: 220px;
+        height: 220px;
+    }
+    .img-box {
+        width: 240px;
+        height: 240px;
+    }
+    .content {
+        width: 40vw;
+    
+    }
+    .img-content {
+        width: 42vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (max-width:800px) {
+    .yoImg {
+        width: 220px;
+        height: 220px;
+    }
+    .img-box {
+        width: 240px;
+        height: 240px;
+    }
+    .content {
+        width: 40vw;
+    
+    }
+    .img-content {
+        width: 42vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #yoSoy, #misHobbies, #sobreMi{
+        flex-direction: column;
+        font-size: rem;
+        width: 100vw;
+    }
+}
+
+@media (max-width:600px){
+    .yoImg {
+        width: 180px;
+        height: 180px;
+    }
+    .img-box {
+        width: 200px;
+        height: 200px;
+    }
+    .content {
+        width: 90vw;
+        height: 50%;
+        font-size: .5rem;
+    
+    }
+    .img-content {
+        width: 100vw;
+        height: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #yoSoy, #misHobbies, #sobreMi{
+        flex-direction: column;
+        font-size: rem;
+        width: 100vw;
+        padding: 10px;
+    }
+
+    #yoSoy .content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #misHobbies .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .cabezal {
+        position: sticky;
+        gap: 0px;
+        justify-content: space-around;
+    }
+    .cabezal-title {
+        margin-left: 5px;
+        font-size: 1.25rem;
+    }
+    .nav-item {
+        font-size: .7rem;
+    }
+    p {
+        font-size: .9rem;
+    }
+    .titulo {
+        font-size: 1.5rem;
+    }
+    .subtitulo {
+        font-size: 1rem;
+    }
+
+}
+
