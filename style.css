@@ -50,9 +50,17 @@ p {
     padding: 10px 20px;
 }
 
-.nav-item:hover {
-    background-color: rgb(75, 75, 75);
-    transition: 250ms;
+@media (hover:hover) {
+    .nav-item:hover {
+        background-color: rgb(75, 75, 75);
+        transition: 250ms;
+    }
+}
+
+.nav-item:active {
+    background-color: #ffffff;
+    color: #000;
+    transition: 50ms;
 }
 
 .content {
